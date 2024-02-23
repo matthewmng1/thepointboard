@@ -1,0 +1,34 @@
+.stats-ps-main{
+  width: 100%;
+}
+
+.stats-ps-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;}
+
+  .stats-ps-header{
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  
+  .stats-ps-table{
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 10px;
+  }
+  
+  .stats-ps-table td{
+    border: .5px solid black;
+  }
+  
+  .stats-ps-table-title{
+    background-color: rgb(177, 177, 177);
+    opacity: .8;
+    font-weight: 700;
+  }

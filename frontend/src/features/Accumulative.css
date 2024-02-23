@@ -1,0 +1,82 @@
+.accumulative-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.accumulative-header{
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.accumulative-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.accumulative-team-statistics{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    width: 100%;
+}
+
+.accumulative-team-name{
+    font-size: x-large;
+    font-weight: 700;
+    margin: 5px 0 5px 0;
+}
+
+.accumulative-team-display{
+    margin-top: -1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.accumulative-game-statistics{
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.acc-stat-table-name{
+    font-weight: 700;
+    background-color: rgb(208, 208, 208);
+}
+
+.accumulative-game-statistics table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.accumulative-game-statistics table td{
+    border: .5px black solid;
+}
+
+.accumulative-game-stat-table td{
+    padding: 2px 10px 2px 10px;
+}
+
+.acc-side-stat-td{
+    min-width: 35px;
+}
+
+.errs{
+    background-color: yellow;
+}

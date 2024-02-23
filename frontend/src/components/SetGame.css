@@ -1,0 +1,53 @@
+.set-table{
+    margin: 10px;
+}
+
+.setgame-header{
+    width: 100;
+}
+
+.set-table-body-headers{
+    background-color: lightgray;
+}
+
+.set-table-body-neg{
+    background-color: yellow;
+}
+
+.set-btn-stat-container{
+    flex-direction: row;
+    height: 100%;
+}
+
+.set-btn{
+    flex-grow: 1;
+    background: none;
+    border: none;
+    font-weight: 900;
+    color: black;
+}
+
+.set-btn:hover{
+    background: rgb(49, 36, 36);
+}
+
+.set-stat{
+    padding: 2px;
+}
+
+.set-table{
+    border-collapse: collapse;
+}
+
+.set-table td{
+    border: .5px black solid;
+}
+
+.set-display-main{
+    display: flex;
+}
+
+.set-display-container{
+    display: flex;
+    flex-direction: row;
+}

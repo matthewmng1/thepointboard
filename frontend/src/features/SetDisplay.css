@@ -1,0 +1,57 @@
+.set-main{
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.set-main-header{
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.set-container{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.set-main-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.set-home, .set-opponent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.set-display-side-stats{
+    text-align: left;
+    width: min-content;
+    margin: 40px 5px 5px 5px
+}
+
+.set-display-side-stat-name{
+    font-weight: 700;
+    background-color: rgb(207, 206, 206);
+    margin-bottom: 0;
+}
+
+.set-display-side-div{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.set-display-side-inner-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

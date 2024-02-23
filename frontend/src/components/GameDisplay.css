@@ -1,0 +1,36 @@
+.game-display-main{
+    margin: 0px 20px 0px 20px;
+    width: 100%;
+}
+
+.game-display-container{
+    width: 100%;
+}
+
+.game-display-table{
+    width: 100%;
+}
+
+.game-display-table-body-headers{
+    background-color: lightgray;
+}
+
+.game-display-table-body-headers td{
+    width: 55px;
+}
+
+.game-display-table-body-neg{
+    background-color: yellow;
+}
+
+.game-display-table-stat{
+    padding: 2px 0 2px 0;
+}
+
+.game-display-main table{
+    border-collapse: collapse;
+}
+
+.game-display-main table td{
+    border: .5px black solid;
+}

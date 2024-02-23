@@ -1,0 +1,51 @@
+.stats-pb-main{
+    width: 100%;
+}
+
+.stats-pb-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.stats-pb-header{
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.stats-pb-tables-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.stats-pb-table{
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.stats-pb-table-name{
+    font-weight: 700;
+    width: auto;
+}
+
+.stats-pb-table td{
+    border: .5px solid black;
+    padding: 2px;
+}
+
+.td-err{
+    background-color: yellow;
+}
+
+.stats-pb-table-title{
+    background-color: rgb(200, 200, 200);
+    opacity: .7;
+    font-weight: 700;
+}
+

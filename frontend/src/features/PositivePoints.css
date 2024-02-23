@@ -1,0 +1,45 @@
+.positive-points-main{
+    width: 100vw;
+}
+
+.positive-points-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.positive-points-header{
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.positive-points-team{
+    font-weight: 700;
+    font-size: x-large;
+    margin: 0 0 5px 0;
+}
+
+.positive-points-table{
+    width: auto;
+}
+
+.pp-header-td{
+    width: 4em;
+}
+
+.td-errs{
+    background-color: yellow;
+}
+
+.positive-points-main table{
+    border-collapse: collapse;
+}
+
+.positive-points-main table td{
+    border: .5px black solid;
+}
+
