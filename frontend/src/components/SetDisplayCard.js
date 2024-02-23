@@ -70,7 +70,7 @@ const SetDisplayCard = ({team, players}) => {
                     <tr className='set-table-body-headers'>
                         <td><b>Player</b></td>
                         <td><b>FSK</b></td>
-                        <td><b>R. Kill</b></td>
+                        <td><b>RK</b></td>
                         <td><b>Block</b></td>
                         <td ><b>AE</b></td>
                         <td ><b>BHE</b></td>
