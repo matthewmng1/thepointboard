@@ -31,7 +31,7 @@ const ReceivingGame = ({team, players, updateStat}) => {
                 </tr>
                 {players.map((player, idx) => (
                     <tr key={idx}>
-                        <td style={{width: "1em"}}>{player.name}</td>
+                        <td className='set-table-player-name'>{player.name}</td>
                         <td className='set-btn-stat-container'>
                             <button className="set-btn" onClick={() => statClick(idx, 'firstServeKill', player.stats.receive.firstServeKill, false)}>-</button>
                             <span className='set-stat'>{player.stats.receive.firstServeKill}</span>

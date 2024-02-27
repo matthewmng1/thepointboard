@@ -4,7 +4,8 @@ import { SetProvider } from './context/SetContext';
 import AppRoutes from './routes/Routes';
 import Navigation from './routes/Navigation';
 import bg from './assets/frvc.png'
-import ClearStorage from './components/ClearStorage';
+import ButtonClearAllData from './components/ButtonClearAllData';
+import ButtonClearStats from './components/ButtonClearStats';
 
 function App() {
   return (
@@ -16,7 +17,10 @@ function App() {
               src={bg}
             />
             <b>Point Board</b>
-            <ClearStorage />
+            <div className='buttons-div'>
+              <ButtonClearStats />
+              <ButtonClearAllData />
+            </div>
             <Navigation />
             <AppRoutes />
         </div>

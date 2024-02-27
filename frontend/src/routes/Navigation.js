@@ -19,6 +19,8 @@ const Navigation = () => {
     <div className='navigation-main'>
       <div className='navigation-container'>
         <div className='navigation-links'>
+          <Link className={activePage === "playersform" ? 'nav-link active' : 'nav-link'} to="/playersform">Players</Link>
+          <hr></hr>
           <Link className={activePage === "set1" ? 'nav-link active' : 'nav-link'} to="/set1">Set 1</Link>
           <hr></hr>
           <Link className={activePage === "set2" ? 'nav-link active' : 'nav-link'} to="/set2">Set 2</Link>

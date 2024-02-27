@@ -29,7 +29,7 @@ const SetDisplayCard = ({team, players}) => {
                     </tr>
                     {players.map((player, idx) => (
                         <tr key={idx}>
-                            <td style={{width: "1em"}}>{player.name}</td>
+                            <td className='set-table-player-name'>{player.name}</td>
                             <td className='set-btn-stat-container set-table-body-pos'>
                                 <span className='set-stat'>{player.stats.serve.ace}</span>
                             </td>
@@ -78,7 +78,7 @@ const SetDisplayCard = ({team, players}) => {
                     </tr>
                     {players.map((player, idx) => (
                         <tr key={idx}>
-                            <td style={{width: "1em"}}>{player.name}</td>
+                            <td className='set-table-player-name'>{player.name}</td>
                             <td className='set-btn-stat-container set-table-body-pos'>
                                 <span className='set-stat'>{player.stats.receive.firstServeKill}</span>
                             </td>

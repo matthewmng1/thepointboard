@@ -51,7 +51,7 @@ const ExportPdf = () => {
         </div>
         
         <div className="page-break">
-        <Accumulative />
+          <Accumulative />
         </div>
         <div className="page-break">        
           <PositivePoints />

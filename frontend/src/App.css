@@ -41,3 +41,9 @@
     transform: rotate(360deg);
   }
 }
+
+.buttons-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

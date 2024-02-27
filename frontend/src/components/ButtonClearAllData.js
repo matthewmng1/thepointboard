@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ClearStorage.css'
+import './Button.css'
 
-const ClearStorage = () => {
+const ButtonClearAllData = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const clearLocalStorage = () => {
@@ -29,7 +29,7 @@ const ClearStorage = () => {
         {showConfirmation &&
           <div className="confirm-clear-overlay">
             <div className="confirm-clear-div">
-              <p>Clear Match Data?</p>
+              <p>Clear All Data?</p>
               <p>This action cannot be undone.</p>
               <div className='confirm-clear-btns'>
                 <button className='confirm clear-btn' onClick={handleConfirm}>Confirm</button>
@@ -38,10 +38,10 @@ const ClearStorage = () => {
             </div>
           </div>
         }
-        <button className='clear-data-btn' onClick={handleConfirmation}>Clear Match Data</button>
+        <button className='clear-data-btn' onClick={handleConfirmation}>Clear All Data</button>
       </div>
     </div>
   );
 };
 
-export default ClearStorage;
+export default ButtonClearAllData;

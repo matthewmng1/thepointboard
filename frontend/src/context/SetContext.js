@@ -23,15 +23,18 @@ export const SetProvider = ({ children }) => {
     }
 
     const defaultPlayers = [
-        {name: 'Maci', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Addie', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Grace', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Sam', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Georgia', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Karli', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Kota', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Mia', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
-        {name: 'Kate', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P1', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P2', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P3', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P4', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P5', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P6', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P7', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P8', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P9', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P10', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P11', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
+        {name: 'P12', stats: {serve: {...serveGame}, receive: {...receiveGame}}},
     ];
 
     const defaultOpponents = [
@@ -68,6 +71,14 @@ export const SetProvider = ({ children }) => {
             return newSets;
         });
     };
+
+    const updatePlayerName = (setIndex, playerIndex, newName) => {
+        setSets((prevSets) => {
+          const newSets = [...prevSets];
+          newSets[setIndex].players[playerIndex].name = newName;
+          return newSets;
+        });
+      };
 
     useEffect(() => {
         localStorage.setItem('volleyballSets', JSON.stringify(sets));
@@ -475,11 +486,37 @@ export const SetProvider = ({ children }) => {
         }
     }
 
+    const resetAllStats = () => {
+        setSets(prevSets => {
+            const newSets = prevSets.map(set => ({
+                players: set.players.map(player => ({
+                    ...player,
+                    stats: {
+                        serve: { ...serveGame },
+                        receive: { ...receiveGame }
+                    }
+                })),
+                opponents: set.opponents.map(opponent => ({
+                    ...opponent,
+                    stats: {
+                        serve: { ...serveGame },
+                        receive: { ...receiveGame }
+                    }
+                }))
+            }));
+            return newSets;
+        });
+    };
+    
+
     return (
         <SetContext.Provider value={{ 
+            serveGame,
+            receiveGame,
             sets, 
             updateSet, 
             initializeSet, 
+            updatePlayerName,
             homeStatTotals,
             opponentStatTotals,
             calculateUnforcedErrors, 
@@ -491,6 +528,7 @@ export const SetProvider = ({ children }) => {
             calculatePositivePoints,
             accumulateStats,
             matchSetTotals,
+            resetAllStats
         }}>
             {children}
         </SetContext.Provider>

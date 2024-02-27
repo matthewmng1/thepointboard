@@ -9,6 +9,11 @@
 
 .set-table-body-headers{
     background-color: lightgray;
+    width: min-content;
+}
+
+.set-table-player-name{
+    width: min-content;
 }
 
 .set-table-body-neg{
@@ -26,6 +31,8 @@
     border: none;
     font-weight: 900;
     color: black;
+    margin: 0;
+    padding: 0px 5px;
 }
 
 .set-btn:hover{

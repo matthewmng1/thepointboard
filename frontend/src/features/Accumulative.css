@@ -1,10 +1,14 @@
 .accumulative-main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.accumulative-container{
+    width: 80%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
     align-items: center;
-    justify-content: center;
 }
 
 .accumulative-header{
@@ -15,13 +19,7 @@
     margin-bottom: 0;
 }
 
-.accumulative-container{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .accumulative-team-statistics{
     display: flex;
@@ -37,7 +35,6 @@
 }
 
 .accumulative-team-display{
-    margin-top: -1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
