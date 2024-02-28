@@ -36,7 +36,7 @@
 
 .stats-pb-table td{
     border: .5px solid black;
-    padding: 2px;
+    padding: 0px 2px;
 }
 
 .td-err{

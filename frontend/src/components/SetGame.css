@@ -29,14 +29,15 @@
     flex-grow: 1;
     background: none;
     border: none;
-    font-weight: 900;
+    font-size: x-large;
+    font-weight: 500;
     color: black;
     margin: 0;
-    padding: 0px 5px;
+    padding: 0px 3px;
 }
 
 .set-btn:hover{
-    background: rgb(49, 36, 36);
+    background: rgb(255, 53, 53);
 }
 
 .set-stat{
@@ -50,6 +51,7 @@
 
 .set-table td{
     border: .5px black solid;
+    padding: 0 2px;
 }
 
 .set-display-main{

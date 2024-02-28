@@ -5,6 +5,9 @@ import './SetGame.css'
 const ServingGame = ({team, players, updateStat}) => {
 
     const statClick = (idx, statName, value, isIncrement) => {
+        if (!isIncrement && value === 0) {
+            return;
+        }
         const newValue = isIncrement ? value + 1 : value - 1;
         updateStat(idx, statName, newValue, true);
     };

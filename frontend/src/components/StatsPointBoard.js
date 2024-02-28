@@ -131,7 +131,7 @@ const StatsPointBoard = ({sets}) => {
 												? 'td-err' 
 												: ''
 											}>
-                      Total: {sumUpStats(frServingGame[statName]) || 0}
+                      <i>Total:</i> {sumUpStats(frServingGame[statName]) || 0}
                     </td>
                   </>
                 ))}
@@ -164,7 +164,7 @@ const StatsPointBoard = ({sets}) => {
 												statName !== 'trans' 
 												? 'td-err' 
 												: ''}>
-                      Total: {sumUpStats(oppoServingGame[statName]) || 0}
+                      <i>Total:</i> {sumUpStats(oppoServingGame[statName]) || 0}
                     </td>
                   </>
                 ))}
@@ -233,11 +233,11 @@ const StatsPointBoard = ({sets}) => {
 												? 'td-err' 
 												: ''}>
 												{isNaN(
-													((sumUpStats(frReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(2))
+													((sumUpStats(frReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(0))
 													? 
 													0
 													: 
-													(((sumUpStats(frReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(2))
+													(((sumUpStats(frReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(0))
 												}%
 											</td>
                     <td 
@@ -248,7 +248,7 @@ const StatsPointBoard = ({sets}) => {
 												statName === 'miscErrors' 
 												? 'td-err' 
 												: ''}>
-                      Total: {sumUpStats(frReceivingGame[statName]) || 0}
+                      <i>Total:</i> {sumUpStats(frReceivingGame[statName]) || 0}
                     </td>
                   </>
                 ))}
@@ -266,11 +266,11 @@ const StatsPointBoard = ({sets}) => {
 												? 'td-err' 
 												: ''}>
 											{isNaN(
-												((sumUpStats(oppoReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(2))
+												((sumUpStats(oppoReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(0))
 												? 
 												0 
 												: 
-												(((sumUpStats(oppoReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(2))
+												(((sumUpStats(oppoReceivingGame[statName]) / totalMatchScores(sets).totalHomeScore) * 100).toFixed(0))
 											}%
 										</td>
                     <td 
@@ -281,7 +281,7 @@ const StatsPointBoard = ({sets}) => {
 												statName === 'miscErrors' 
 												? 'td-err' 
 												: ''}>
-                      Total: {sumUpStats(oppoReceivingGame[statName]) || 0}
+                      <i>Total:</i> {sumUpStats(oppoReceivingGame[statName]) || 0}
                     </td>
                   </>
                 ))}
