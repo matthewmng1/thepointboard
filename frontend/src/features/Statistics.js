@@ -13,10 +13,8 @@ const Statistics = () => {
         <div className='statistics-point-board'>
           <StatsPointBoard sets={sets} />
         </div>
-        <div className='statistics-sideout'>
+        <div className='statistics-so-ps'>
           <StatsSideOut sets={sets} />
-        </div>
-        <div className='statistics-point-scoring'>
           <StatsPointScoring sets={sets}/>
         </div>
       </div>

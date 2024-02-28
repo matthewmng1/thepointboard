@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Accumulative from '../features/Accumulative'
-import ExportPdf from '../features/ExportPdf'
+import GenPdf from '../features/GenPdf'
 import PlayersForm from '../features/PlayersForm'
 import PositivePoints from '../features/PositivePoints'
 import Set from '../features/Set'
@@ -20,7 +20,9 @@ const AppRoutes = () => {
             <Route path="/accumulative" element={<Accumulative />}/>
             <Route path="/positivepoints" element={<PositivePoints />}/>
             <Route path="/statistics" element={<Statistics />}/>
-            <Route path="/exportpdf" element={<ExportPdf />}/>
+            {/* <Route path="/exportpdf" element={<ExportPdf />}/> */}
+            <Route path="/genpdf" element={<GenPdf />}/>
+
         </Routes>
     </div>
   )

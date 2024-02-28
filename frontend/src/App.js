@@ -6,6 +6,7 @@ import Navigation from './routes/Navigation';
 import bg from './assets/frvc.png'
 import ButtonClearAllData from './components/ButtonClearAllData';
 import ButtonClearStats from './components/ButtonClearStats';
+import InstallAppButton from './components/InstallAppButton';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <ButtonClearStats />
               <ButtonClearAllData />
             </div>
+            <InstallAppButton />
             <Navigation />
             <AppRoutes />
         </div>

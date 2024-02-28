@@ -11,10 +11,16 @@
     align-items: center;
 }
 
-.statistics-point-board, .statistics-sideout, .statistics-point-scoring{
+.statistics-point-board, .statistics-so-ps{
     display: flex;
     width: 80%;
     margin: 10px;
     padding: 10px;
     align-items: center;
+}
+
+.statistics-so-ps{
+    display: flex;
+    flex: row;
+    width: 100%;
 }

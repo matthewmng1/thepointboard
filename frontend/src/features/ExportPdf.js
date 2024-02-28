@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PDFExport, savePDF } from '@progress/kendo-react-pdf';
+import { PDFExport, savePDF, Page } from '@progress/kendo-react-pdf';
 import Accumulative from './Accumulative';
 import PositivePoints from './PositivePoints';
 import Statistics from './Statistics';
@@ -24,6 +24,22 @@ const ExportPdf = () => {
     }
   };
 
+  function downloadPDF(url) { 
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'blob';
+    xhr.onload = function(e) {
+      if (this.status == 200) {
+        var myBlob = this.response;
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(myBlob);
+        link.download = `${pdfFilename}.pdf`;
+        link.click();
+      }
+    };
+    xhr.send();
+  }
+
   return(
     <div>
       <input
@@ -32,21 +48,23 @@ const ExportPdf = () => {
         value={pdfFilename}
         onChange={(e) => setPdfFilename(e.target.value)}
       />
-      <button onClick={exportPDFWithComponent}>
+      <button onClick={() => downloadPDF(exportPDFWithComponent)}>
         Export Match PDF
       </button>
       <PDFExport 
         forcePageBreak=".page-break" 
-        landscape='true' 
         scale={0.5} 
+        landscape='true'
         ref={pdfExportComponent} 
         paperSize="A4" 
-        margin={10}
+        margin={20}
         fileName={`${pdfFilename}.pdf`}
         >
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '10px' }}>
           <SetDisplay num={1}/>
           <SetDisplay num={2}/>
+        </div>
+        <div className="page-break">
           <SetDisplay num={3}/>
         </div>
         

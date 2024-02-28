@@ -37,7 +37,9 @@ const Navigation = () => {
           <hr></hr>
           <Link className={activePage === "statistics" ? 'nav-link active' : 'nav-link'} to="/statistics">Statistics</Link>
           <hr></hr>
-          <Link className={activePage === "exportpdf" ? 'nav-link active' : 'nav-link'} to="/exportpdf">PDF to Export</Link>
+          {/* <Link className={activePage === "exportpdf" ? 'nav-link active' : 'nav-link'} to="/exportpdf">PDF to Export</Link> */}
+          {/* <hr></hr> */}
+          <Link className={activePage === "genpdf" ? 'nav-link active' : 'nav-link'} to="/genpdf">Generate PDF</Link>
           
         </div>
       </div>
