@@ -51,7 +51,7 @@
 
 .set-table td{
     border: .5px black solid;
-    padding: 0 2px;
+    padding: -10px 5px;
 }
 
 .set-display-main{
