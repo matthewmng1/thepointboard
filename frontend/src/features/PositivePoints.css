@@ -19,12 +19,13 @@
 
 .positive-points-team{
     font-weight: 700;
-    font-size: x-large;
+    font-size: large;
     margin: 0 0 5px 0;
 }
 
 .positive-points-table{
     width: auto;
+    font-size: small;
 }
 
 .pp-header-td{

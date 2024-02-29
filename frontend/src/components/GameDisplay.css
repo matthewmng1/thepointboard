@@ -16,7 +16,8 @@
 }
 
 .game-display-table-body-headers td{
-    width: 55px;
+    min-width: 40px;
+    font-size: small;
 }
 
 .game-display-table-body-neg{
@@ -24,8 +25,9 @@
 }
 
 .game-display-table-stat{
-    width: 100px;
+    width: min-content;
     padding: 2px 0 2px 0;
+    font-size: small;
 }
 
 .game-display-main table{

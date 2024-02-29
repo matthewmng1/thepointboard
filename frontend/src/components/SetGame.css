@@ -10,10 +10,12 @@
 .set-table-body-headers{
     background-color: lightgray;
     width: min-content;
+    font-size: small;
 }
 
 .set-table-player-name{
     width: min-content;
+    font-size: small;
 }
 
 .set-table-body-neg{
@@ -29,11 +31,11 @@
     flex-grow: 1;
     background: none;
     border: none;
-    font-size: x-large;
-    font-weight: 500;
+    font-size: small;
+    font-weight: 700;
     color: black;
-    margin: 0;
-    padding: 0px 3px;
+    margin: 0px;
+    padding: 0px 5px;
 }
 
 .set-btn:hover{
@@ -41,7 +43,8 @@
 }
 
 .set-stat{
-    padding: 2px;
+    font-size: small;
+    padding: 5px;
 }
 
 .set-table{

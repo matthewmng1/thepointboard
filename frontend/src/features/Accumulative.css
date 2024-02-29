@@ -19,7 +19,10 @@
     margin-bottom: 0;
 }
 
-
+.accumulative-display-container{
+    display: flex;
+    flex-direction: row;
+}
 
 .accumulative-team-statistics{
     display: flex;
@@ -29,7 +32,7 @@
 }
 
 .accumulative-team-name{
-    font-size: x-large;
+    font-size: large;
     font-weight: 700;
     margin: 5px 0 5px 0;
 }
@@ -42,14 +45,12 @@
 
 
 .accumulative-game-statistics{
-    margin: 10px 0;
+    margin: 40px 0;
     padding: 5px 0;
-    width: 90%;
+    width: max-content;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    flex-direction: column;
+    font-size: small;
 }
 
 .acc-stat-table-name{

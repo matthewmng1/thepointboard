@@ -31,8 +31,16 @@ const Accumulative = () => {
                                 <ReceivingGameDisplay stats={accumulatedPlayerStats} />
                             </div>
                         </div>
-                        
-                        <div className='accumulative-game-statistics'>
+                        <div className='accumulative-opponent-display'>
+                            <p className='accumulative-team-name'>Opponent</p>
+                            <div className='accumulative-team-display'>
+                                <ServingGameDisplay stats={accumulatedOpponentStats} />
+                                <ReceivingGameDisplay stats={accumulatedOpponentStats} />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='accumulative-game-statistics'>
                             {sets.map((set, index) => (
                                 <React.Fragment key={index}>     
                             <table className='accumulative-game-stat-table'>
@@ -66,14 +74,6 @@ const Accumulative = () => {
                             </React.Fragment>
                             ))}
                         </div>
-                        <div className='accumulative-opponent-display'>
-                            <p className='accumulative-team-name'>Opponent</p>
-                            <div className='accumulative-team-display'>
-                                <ServingGameDisplay stats={accumulatedOpponentStats} />
-                                <ReceivingGameDisplay stats={accumulatedOpponentStats} />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
